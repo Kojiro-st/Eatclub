@@ -2,10 +2,15 @@
   .header_left
     Eatclub
   .header_right
+    .header_right__beguinner
+      = link_to edit_user_path(:id) do
+        初めての方
     .header_right__shop
-      shop
+      = link_to edit_shop_path(:id) do
+        shop
     .header_right__customer
-      customer
+      = link_to edit_user_path(:id) do
+        customer
 .top-content
   .top-content_left
     .top-content_left__big
